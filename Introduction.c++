@@ -1,6 +1,6 @@
 #include <iostream>
-/* using string_t = std::string;
-namespace og{
+using string_t = std::string;
+/* namespace og{
     int age = 20;
 }
     */
@@ -18,6 +18,9 @@ int main(){
    string_t name = "Omar";
    std::cout << "My name is " << name << " and I am " << age << std::endl;
 */
-
+string_t name;
+std::cout << "What is your name? ";
+std::getline(std::cin, name);
+std::cout << "Hello " << name;
     return 0;
 }
