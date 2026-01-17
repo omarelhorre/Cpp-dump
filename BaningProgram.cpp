@@ -10,7 +10,11 @@ double deposit()
     double amount;
     cout << "Enter the amount of money to be deposited : ";
     cin >> amount;
-    if (amount < 0) cout << "invalid amount" << '\n';
+    if (amount < 0) 
+    {
+        cout << "invalid amount" << '\n';
+         return 0;
+        }
     else return amount;
 
 }
@@ -34,9 +38,11 @@ int main()
         cout << "2. Deposit Money"<< '\n';
         cout << "3. Withdraw Money"<< '\n';
         cout << "4. Exit"<< '\n';
+
         cin >> choice;
         cin.clear();
         fflush(stdin);
+
         switch(choice)
         {
             case 1:
